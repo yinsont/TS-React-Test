@@ -1,27 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello';
+import Increment from './components/Increment';
+import Decrement from './components/Decrement';
 
 function App() {
+  const [counter, setCounter] = useState(0)
+
+  const incrementCounter = ():void => {
+    setCounter(counter + 1)
+  }
+
+  const decrementCounter = ():void => {
+    setCounter(counter - 1)
+  }
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      {/* <hello/> */}
       <Hello text={'hello'}/>
+      <h1>{counter}</h1>
+      <div>
+        <Increment increment={incrementCounter}/>
+        <Decrement decrement={decrementCounter}/>
+      </div>
     </div>
   );
 }
