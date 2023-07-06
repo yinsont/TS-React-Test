@@ -10,7 +10,7 @@ import Form from './components/Form';
 function App() {
   const [counter, setCounter] = useState(0)
   const [formData, setFormData] = useState({firstName: '', lastName: ''})
-
+  
   const incrementCounter = ():void => {
     setCounter(counter + 1)
   }
@@ -29,12 +29,12 @@ function App() {
       firstName: firstName,
       lastName: lastName
     });
-  
-    console.log(firstName, lastName);
   };
   
 
-
+  const handleClick = () => {
+    console.log(formData)
+  }
 
   return (
     <div className="App">
@@ -45,6 +45,7 @@ function App() {
         <Decrement decrement={decrementCounter}/>
       </div>
       <Form handleSubmit = {handleSubmit}/>
+      <button onClick = {handleClick}>Click to check formData</button>
     </div>
   );
 }
