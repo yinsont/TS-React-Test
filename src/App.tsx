@@ -5,6 +5,7 @@ import Hello from './components/Hello';
 import Increment from './components/Increment';
 import Decrement from './components/Decrement';
 import Form from './components/Form';
+import FlipCard from './components/FlipCard';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       </div>
       <Form handleSubmit = {handleSubmit}/>
       <button onClick = {handleClick}>Click to check formData</button>
+      <FlipCard/>
     </div>
   );
 }
