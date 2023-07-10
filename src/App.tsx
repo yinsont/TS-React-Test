@@ -6,6 +6,7 @@ import Increment from './components/Increment';
 import Decrement from './components/Decrement';
 import Form from './components/Form';
 import FlipCard from './components/FlipCard';
+import ClickTest from './components/ClickTest';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <Form handleSubmit = {handleSubmit}/>
       <button onClick = {handleClick}>Click to check formData</button>
       <FlipCard/>
+      <ClickTest/>
     </div>
   );
 }

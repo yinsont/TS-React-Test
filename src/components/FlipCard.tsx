@@ -25,6 +25,7 @@ const FlipCard: React.FC<Props> = () => {
             : require('../images/federalagent.PNG')
         }
         alt="Card"
+        height={200}
       />
     </div>
   );
