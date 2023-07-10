@@ -1,22 +1,33 @@
-import React, {MouseEvent} from 'react'
+import React, { useState } from 'react';
 
-interface Props{
-
-}
+interface Props {}
 
 const FlipCard: React.FC<Props> = () => {
+  const [isHovered, setIsHovered] = useState(false);
 
-    const handleMouseEnter = (event: MouseEvent<HTMLDivElement>) = {
-        event.preventDefault()
-    }
-    return(
-        <div onMouseEnter={handleMouseEnter}>
-            {/* <h1>FlipCard</h1> */}
-            <img src={require('../images/federalagent.PNG')}></img>
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
 
-        </div>
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
-    )
-}
+  return (
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <img
+        src={
+          isHovered
+            ? require('../images/noice.PNG')
+            : require('../images/federalagent.PNG')
+        }
+        alt="Card"
+      />
+    </div>
+  );
+};
 
-export default FlipCard
+export default FlipCard;
