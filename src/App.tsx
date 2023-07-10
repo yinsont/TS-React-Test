@@ -7,6 +7,7 @@ import Decrement from './components/Decrement';
 import Form from './components/Form';
 import FlipCard from './components/FlipCard';
 import ClickTest from './components/ClickTest';
+import Fetch from './components/Fetch';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
       <button onClick = {handleClick}>Click to check formData</button>
       <FlipCard/>
       <ClickTest/>
+      <Fetch/>
     </div>
   );
 }

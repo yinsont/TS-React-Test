@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-interface Props {}
+interface Props {
+  
+}
 
 const FlipCard: React.FC<Props> = () => {
   const [isHovered, setIsHovered] = useState(false);
