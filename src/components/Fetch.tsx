@@ -7,12 +7,12 @@ interface Props {
 const Fetch: React.FC<Props> = () => {
 
     useEffect(() => {
-    
     }, [])
+
     const handleClickEvent = () => {
-            fetch ('https://pokeapi.co/api/v2/pokemon/ditto')
-            .then(r => r.json())
-            .then(data => console.log(data))
+        fetch ('https://www.freetogame.com/api/games')
+        .then(r => r.json())
+        .then(data => console.log(data))
     }
     return (
         <div>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Hello from './components/Hello';
@@ -12,6 +12,7 @@ import Fetch from './components/Fetch';
 
 function App() {
   const [counter, setCounter] = useState(0)
+  
   const [formData, setFormData] = useState({firstName: '', lastName: ''})
   
   const incrementCounter = ():void => {
@@ -33,7 +34,6 @@ function App() {
       lastName: lastName
     });
   };
-  
 
   const handleClick = () => {
     console.log(formData)
