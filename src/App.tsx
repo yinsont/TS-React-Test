@@ -8,6 +8,7 @@ import Form from './components/Form';
 import FlipCard from './components/FlipCard';
 import ClickTest from './components/ClickTest';
 import Fetch from './components/Fetch';
+import CatImageCreator from './components/CatImageCreator';
 
 
 function App() {
@@ -46,12 +47,13 @@ function App() {
       <div>
         <Increment increment={incrementCounter}/>
         <Decrement decrement={decrementCounter}/>
-      </div>
+      </div> 
       <Form handleSubmit = {handleSubmit}/>
       <button onClick = {handleClick}>Click to check formData</button>
       <FlipCard/>
       <ClickTest/>
       <Fetch/>
+      <CatImageCreator/>
     </div>
   );
 }
