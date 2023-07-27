@@ -9,6 +9,7 @@ import FlipCard from './components/FlipCard';
 import ClickTest from './components/ClickTest';
 import Fetch from './components/Fetch';
 import CatImageCreator from './components/CatImageCreator';
+import QuoteGenerator from './components/QuoteGenerator';
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
       <ClickTest/>
       <Fetch/>
       <CatImageCreator/>
+      <QuoteGenerator/>
     </div>
   );
 }
