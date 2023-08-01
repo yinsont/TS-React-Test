@@ -10,7 +10,7 @@ import ClickTest from './components/ClickTest';
 import Fetch from './components/Fetch';
 import CatImageCreator from './components/CatImageCreator';
 import QuoteGenerator from './components/QuoteGenerator';
-
+import Clock from './components/Clock';
 
 function App() {
   const [counter, setCounter] = useState(0)
@@ -56,6 +56,7 @@ function App() {
       <Fetch/>
       <CatImageCreator/>
       <QuoteGenerator/>
+      <Clock/>
     </div>
   );
 }
