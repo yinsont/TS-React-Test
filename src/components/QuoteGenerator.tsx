@@ -9,9 +9,12 @@ const QuoteGenerator: React.FC<Props> = () => {
     const [author, setAuthor] = useState<string>('')
 
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        fetch('https://api.quotable.io/random')
-        .then(r => r.json())
-        .then(d => (console.log(d[0]), setQuote(d[0].content), setAuthor(d[0].author)));
+        // fetch('https://api.quotable.io/random')
+        // .then(r => r.json())
+        // .then(d => (console.log(d[0]), setQuote(d[0].content), setAuthor(d[0].author)));
+        fetch('https://animechan.xyz/api/random')
+            .then(r => r.json())
+            .then(d => (console.log(d), setQuote(d.quote), setAuthor(d.character)))
     }
     
     return (
@@ -26,3 +29,4 @@ const QuoteGenerator: React.FC<Props> = () => {
 export default QuoteGenerator
 
 //https://github.com/lukePeavey/quotable
+//https://animechan.xyz/docs#random-quote
