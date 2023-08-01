@@ -11,6 +11,7 @@ import Fetch from './components/Fetch';
 import CatImageCreator from './components/CatImageCreator';
 import QuoteGenerator from './components/QuoteGenerator';
 import Clock from './components/Clock';
+import Timer from './components/Timer';
 
 function App() {
   const [counter, setCounter] = useState(0)
@@ -57,6 +58,7 @@ function App() {
       <CatImageCreator/>
       <QuoteGenerator/>
       <Clock/>
+      <Timer/>
     </div>
   );
 }
